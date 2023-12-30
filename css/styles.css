@@ -10,6 +10,23 @@ a {
 
 ul, ol {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
 }
 
 .visually-hidden {
@@ -20,6 +37,11 @@ ul, ol {
     overflow: hidden;
 }
 /*-------------HEADER-------------*/
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     color: #4D5AE5;
     font-family: Raleway, sans-serif;
@@ -28,10 +50,16 @@ ul, ol {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .logo-part {
     color: #2E2F42;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
 }
 
 .nav-link {
@@ -40,6 +68,8 @@ ul, ol {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
 }
 
 .nav-link:hover, 
@@ -49,6 +79,12 @@ ul, ol {
 
 .address {
     font-style: normal;
+    margin-left: auto;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
 }
 
 .address-link {
