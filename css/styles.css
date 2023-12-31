@@ -4,14 +4,34 @@ body {
     background-color: #fff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 a {
     text-decoration: none;
+    color: currentColor;
 }
 
 ul, ol {
     list-style: none;
     padding: 0;
     margin: 0;
+
+}
+
+button {
+   cursor: pointer;
+}
+
+img {
+    display: block;
 }
 
 .header {
@@ -101,7 +121,13 @@ ul, ol {
 
 /*------------HERO--------------*/
 .hero {
-    background:#2E2F42;
+
+}
+
+.hero-container {
+    background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 292px;
 }
 
 .hero-title {
@@ -111,7 +137,9 @@ ul, ol {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07em;
-    letter-spacing: 0.02em;    
+    letter-spacing: 0.02em;  
+    max-width: 496px; 
+    margin: 0 auto 48px;
 }
 
 .hero-btn {
@@ -123,7 +151,14 @@ ul, ol {
     font-weight: 500;
     line-height: 1.5em;
     letter-spacing: 0.04em;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    padding: 16px 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-btn:hover,
@@ -133,7 +168,8 @@ ul, ol {
 
 /*-----------FEATURES-----------*/
 .features {
-
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .features-title {
@@ -141,11 +177,12 @@ ul, ol {
 }
 
 .features-list {
-
+    display: flex;
+    gap: 24px;
 }
 
 .features-item {
-
+    flex-basis: calc((100% - 24px * 3) / 4);
 }
 
 .features-item-title {
@@ -154,6 +191,7 @@ ul, ol {
     font-weight: 500;
     line-height: 1.2em;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .features-item-text {
@@ -180,28 +218,41 @@ ul, ol {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding-top: 120px;
+    margin-bottom: 72px;
 }
 
 .team-list {
-
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
 }
 
 .team-item {
     background: #FFF;
+    border: none;
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 .team-img {
-
+   
 }
 
 .team-item-title {
-    
     color: #2E2F42;
     text-align: center;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2em;
     letter-spacing: 0.02em;
+    padding-top: 32px;
 }
 
 .team-item-text {
@@ -210,6 +261,7 @@ ul, ol {
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
 }
 
 .portfolio {
@@ -224,18 +276,29 @@ ul, ol {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
 .portfolio-list {
-
+    width: 1128px;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
 }
 
 .portfolio-item {
-
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #E7E9FC;
+    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-img {
-
+    margin: 0 auto;
 }
 
 .portfolio-item-title {
@@ -244,6 +307,7 @@ ul, ol {
     font-weight: 500;
     line-height: 1.2em;
     letter-spacing: 0.02em;
+   
 }
 
 .portfolio-item-text {
@@ -251,11 +315,14 @@ ul, ol {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    
 }
 
 /*----------FOOTER---------*/
 .footer {
-background:#2E2F42;
+    background-color:#2E2F42;
+    flex-shrink: 0;
+    padding: 100px;
 }
 
 .logo {
@@ -266,6 +333,11 @@ background:#2E2F42;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.footer-container {
+    padding-top: 100px;
+    padding-bottom: 188p;
 }
 
 .footer-logo-part {
