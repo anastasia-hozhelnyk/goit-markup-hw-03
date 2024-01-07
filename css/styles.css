@@ -300,10 +300,9 @@ img {
 .portfolio-item {
     background: #FFF;
     width: 360px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: calc((100% - 24 * 2) / 3);
+    width: calc((100% - 24px * 2) / 3);
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-img {
@@ -321,8 +320,7 @@ img {
 
 .portfolio-item-box {
     padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
+    
 }
 
 .portfolio-item-text {
